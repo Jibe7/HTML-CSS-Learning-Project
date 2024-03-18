@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+main {
+    height: fit-content;
+}
+/* -------------------Header------------------------- */
 .announce {
     background-color: rgb(138, 170, 135);
     width: 100%;
@@ -11,6 +15,7 @@
     /* border: 1px solid black; */
     /* padding: 50px; */
 }
+
 
 nav {
     /* border: 1px solid black; */
@@ -28,7 +33,7 @@ nav {
     height: 80px;
     background-color: black;
     position: relative;
-    left: -100px;
+    left: -32px;
 }
 
 .menu {
@@ -74,7 +79,7 @@ nav {
     height: 80px;
     background-color: blue;
     position: relative;
-    left: 50px;
+    left: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,4 +101,87 @@ nav {
     width: 60px;
     height: 60px;
     background-color: aquamarine;
+}
+/* -------------------Vertical Container------------------------- */
+.vertical-container {
+    border: 3px solid black;
+    display: flex;
+    /* justify-content: center; */
+    max-width: fit-content;
+    margin: 0 auto;
+    height: inherit;
+    background-color: bisque;
+    flex-direction: column;
+}
+/* -------------------Display Windows------------------------- */
+.display-window {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    max-width: fit-content;
+}
+
+.display-window1 {
+    margin: 0 10px;
+}
+
+.ethics {
+    width: 672px;
+    height: 672px;
+    background-color: #7793bb;
+    margin: 0 10px;
+}
+/* -------------------Moral------------------------- */
+.moral {
+    background-color: brown;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* -------------------Qualities------------------------- */
+.qualities {
+    background-color: #ede7d9;
+    height: 562px;
+}
+/* -------------------Industry------------------------- */
+.industry {
+    background-color: #f7e594;
+    height: 430px;
+    margin-top: 70px;
+}
+/* -------------------Invitation------------------------- */
+.invitation {
+    background-color: beige;
+    height: 680px;
+}
+/* -------------------Reviews------------------------- */
+.reviews {
+    background-color: #50ab6d;
+    height: 212px;
+}
+/* -------------------Adv Policy------------------------- */
+.adv-policy {
+    background-color: #f4e54d;
+    height: 238px;
+}
+/* -------------------Other Pages------------------------- */
+
+/* -------------------Footer------------------------- */
+.additional-info {
+    height: 320px;
+}
+
+.legal {
+    background-color: #bdba74;
+    height: 60px;
+}
+/* -------------------No ad tab------------------------- */
+.no-ad-tab {
+    width: 448px;
+    height: 72px;
+    background-color: rgb(242, 229, 96);
+    position: fixed;
+    right: 0;
+    bottom: 0px;
 }
