@@ -413,3 +413,9 @@ footer h4 {
     right: 0;
     bottom: 0px;
 }
+
+.no-ad {
+    font-size: 40px;
+    position: relative;
+    top: -10px;
+}
