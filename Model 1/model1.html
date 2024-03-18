@@ -4,26 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Less but better</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
     <main>
         <header>
-          <div class="announce"></div>
+          <div class="announce">
+            <p class="announce-sentence">
+                Loom recrute 🤝 On recherche un(e) responsable production, qualité et réparation. <a href="">Cliquez ici</a> pour postuler.
+            </p>
+          </div>
             <nav>  
                 <div class="logo">
                 <img src="logo.png" alt="" width="80px" height="80px" />
                 </div>
                 <div class="menu">
-                    <div class="men"></div>
-                    <div class="women"></div>
-                    <div class="About"></div>
-                    <div class="Blog"></div>
+                    <div class="men menu-txt">HOMME</div>
+                    <div class="women menu-txt">FEMME</div>
+                    <div class="About menu-txt">À PROPOS</div>
+                    <div class="Blog menu-txt">BLOG</div>
                 </div>
                 <div class="utilities">
-                    <div class="connect"></div>
-                    <div class="search"></div>
-                    <div class="basket"></div>
+                    <div class="connect">SE CONNECTER</div>
+                    <div class="search">
+                        <img src="lookup.png" alt="lookup logo" height="30px">
+                    </div>
+                    <div class="basket">
+                        <img src="shop-basket.png" alt="shop basket logo" height="40px">
+                    </div>
                 </div>
           </nav>
         </header>
@@ -39,7 +48,13 @@
                     />
                     </section>
                     <section class="display-window2">
-                        <div class="ethics"></div>
+                        <div class="ethics">
+                            <h1 class="top-h1">Achetons moins. Produisons mieux.</h1>
+                            <div class="ethic-bot">
+                                <a href="" class="eth-h"><h3>Homme</h3></a>
+                                <a href="" class="eth-f"><h3>Femme</h3></a>
+                            </div>
+                        </div>
                     </section>
             </article>
 
@@ -53,17 +68,28 @@
                 </article>
             
             <article class="qualities">
-                <h3 class="qualify">Tout beau, tout chaud</h3>
-                <p class="describes">Nouvelles couleurs, nouveaux vêtements, nouvelles générations… Voici nos derniers vêtements.</p>
-                <a href="">
-                    <p class="present">Voir les nouveau-nés</p>
-                </a>
+
+                <div class="qualify-text">
+                    <h3 class="qualify">Tout beau, tout chaud</h3>
+                    <p class="describes">Nouvelles couleurs, nouveaux vêtements, nouvelles générations… Voici nos derniers vêtements.</p>
+                    <a href="">
+                        <p class="present">Voir les nouveau-nés</p>
+                    </a>
+                </div>
+
+                <div class="qualify-img">
+                    <img src="https://www.loom.fr/cdn/shop/files/homepage_nouveau_nes_desktop_1.jpg?v=1702306182&width=1000" alt="two people posing" height="562px">
+                </div>
+
             </article>
 
             <article class="industry">
-                <img src="" alt="">
-                <h3 class="wrong-industry">À force de travailler dedans, on a compris ce qui ne tourne pas rond dans l’industrie textile.</h3>
-                <a href="" class="blog-link">Notre blog</a>
+                <img src="https://www.loom.fr/cdn/shop/files/homepage_loom_hiver_2022_-_7_1.jpg?v=1669216547&width=1000" alt="" height="400px">
+
+                <div class="industry-txt">
+                    <h3 class="wrong-industry">À force de travailler dedans, on a compris ce qui ne tourne pas rond dans l’industrie textile.</h3>
+                    <a href="" class="blog-link">Notre blog</a>
+                </div>
             </article>
 
             <article class="invitation">
@@ -74,41 +100,69 @@
                     </p>
                     <p class="shop-time">
                         Du mardi au vendredi : de 11h à 14h puis de 15h à 19h
-                        Samedi : de 11h à 19h</p>
-                        <h3 class="questions">Une question ?</h3>
+                    </br>Samedi : de 11h à 19h</p>
+                        <h3 class="questions"><a href="">Une question ?</a></h3>
                 </div>
-                <img src="" alt="">
+                <img src="https://www.loom.fr/cdn/shop/files/homepage_loom_hiver_2022_-_5.jpg?v=1667811083&width=1800" alt="" height="800px">
             </article>
 
             <article class="reviews">
                 <h3 class="review-title">Comme des fous, comme des soldats</h3>
-                <!-- <img src="" alt="stars"> -->
                 <p class="stars">★★★★★</p>
                 <p class="customers-review">Ils aiment nos vêtements : nos clients et clientes nous ont laissé plus de 15 000 avis, avec une note moyenne de 4,7 sur 5.</p>
             </article>
 
             <article class="adv-policy">
-                <h1 class="no-ad"></h1>
-                <p class="newsletter-sub"></p>
-                <!-- <input type="email" name="" id=""> -->
-                <!-- <input type="button" value=""> -->
-                <p class="newsletter-clause"></p>
+                <h1 class="no-ad">On ne fait pas
+                    de pub.</h1>
+
+                <div class="right-adv">
+                    <p class="newsletter-sub">Pour avoir de nos nouvelles, il y a notre newsletter. Promis, on n'écrit que si on a vraiment quelque chose à dire.</p>
+                    <input type="email" name="" id="" placeholder="Votre e-mail ici.">
+                    <input type="submit" value="&rarr;">
+                    <p class="newsletter-clause">En vous inscrivant à notre newsletter, vous acceptez notre politique de confidentialité (vous pouvez vérifier, il n'y a pas de loup).</p>
+                </div>
+
             </article>
         </div>
         
         <footer>
             <article class="additional-info">
-                <section class="help"></section>
-                <section class="learn-more"></section>
-                <section class="socials"></section>
+                <section class="help">
+                    <h4 class="need-help">Besoin d'aide ?</h4>
+                    <a href="">Notre boutique</a>
+                    <a href="">Faire un retour</a>
+                    <a href="">Entretenir ses vêtements</a>
+                    <a href="">Travailler chez Loom</a>
+                    <a href="">Contact & FAQ</a>
+                </section>
+                <section class="learn-more">
+                    <h4>Envie de creuser</h4>
+                    <a href="">Notre mission</a>
+                    <a href="">Nos usines</a>
+                    <a href="">Là où on galère encore</a>
+                    <a href="">La mode à l'envers -></a>
+                    <a href="">Membre d'En Mode Climat</a>
+                </section>
+                <section class="socials">
+                    <h4>Socialisons</h4>
+                    <div class="social-logo">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </section>
             </article>
 
             <article class="legal">
-                <p class="brand"></p>
-                <p class="confid"></p>
-                <p class="legal-mention"></p>
-                <p class="legal-sell-cond"></p>
-                <p class="promo"></p>
+                <div class="legal-disp">
+                    <p class="brand">&copy; Loom</p>
+                    <p class="confid">Confidentialité</p>
+                    <p class="legal-mention">Mentions Légales</p>
+                    <p class="legal-sell-cond">CGV</p>
+                    <p class="promo">Codes promos</p>
+                    <p class="nm">Georges-Alain</p>
+                </div>
             </article>
 
         </footer>
