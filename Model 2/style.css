@@ -45,17 +45,8 @@ main {
 }
 
     
-
-/* There was a media query there, the other one I deleted.*/
-.navigation {
-    background-color: #37393b;
-    height: 100vh;
-    position: fixed;
-    width: 80px;
-}
-
 .visible {
-    width: 80vw;
+    width: 70vw;
     left: -45px;
     transition: left 0.03s cubic-bezier(.5,.01,.53,.97), width 1s ease;
 }
@@ -67,6 +58,11 @@ main {
 }
 
 
+.navigation {
+    background-color: #37393b;
+    height: 100vh;
+    position: fixed;
+}
 
 
 #menu-btn:hover {
@@ -87,11 +83,29 @@ main {
     height: 80px;
 }
 
-.main-chat {
-    background-color: rgb(179, 100, 4);
-    height: calc(100vh - 80px);
-    width: 700px;
-    /* flex: 1 0 700px; */
-    margin: 0 auto;
+@media (min-width: 730px) {
 
+    
+    .main-chat {
+        background-color: rgb(179, 100, 4);
+        height: calc(100vh - 80px);
+        width: 700px;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 730px) {
+
+    .main-chat {
+        background-color: rgb(162, 179, 4);
+        height: calc(100vh - 80px);
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .visible {
+        width: 90vw;
+    }
 }
