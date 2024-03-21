@@ -64,15 +64,27 @@ main {
     .navigation {
         background-color: #37393b;
         height: 100vh;
-
-        /* width: 250px; */
-        /* flex: 1 0 250px; */
+        position: fixed;
+        width: 80px;
     }
+
+    .visible {
+        width: 70vw;
+        left: -45px;
+        transition: left 0.03s cubic-bezier(.5,.01,.53,.97), width 1s ease;
+    }
+
+    .invisible {
+        width: 5vw;
+        left: -200px;
+        transition: left 0.01s cubic-bezier(1,0,.32,.97), width 1s ease;
+    }
+
 
     #menu-btn {
         background-color: #37393b;
         border: none;
-        position: absolute;
+        position: fixed;
         top: 20px;
         left: 20px;
         cursor: pointer;

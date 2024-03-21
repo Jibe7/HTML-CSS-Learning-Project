@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <aside class="navigation">
+            <div class="header-height">
+                <button>
+                    <img id="menu-btn" src="menu-icon.svg" alt="button menu icon" width="40px">
+                </button>
+            </div>
+        </aside>
+
+        <div class="right-side">
+            
+            <header class="app-header"></header>
+                
+            </header>
+            <section class="main-chat">
+                
+            </section>
+
+        </div>
+    </main>
+    <script>
+        window.onload = function() {
+            let nav = document.getElementsByClassName('navigation')
+            let btn = document.getElementById("menu-btn")
+            nav[0].classList.add('invisible')
+            
+            console.log(nav[0].classList.contains('visible'))
+            console.log(nav[0].classList)
+
+            let btnEvent = btn.addEventListener('click', () => {
+                if (nav[0].classList.contains("visible")) {
+                    nav[0].classList.remove('visible')
+                    nav[0].classList.add('invisible')
+                    btn.style.visibility =  'visible';
+                } else {
+                    nav[0].classList.remove('invisible')
+                    nav[0].classList.add('visible')
+                }
+            })
+
+        }
+    </script>
+</body>
+</html>
