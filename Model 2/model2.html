@@ -11,19 +11,79 @@
 <body>
     <main>
         <aside class="navigation">
-                
+            <div class="header-height">
+                <button>
+                    <img id="menu-btn" src="menu-icon.svg" alt="button menu icon" width="40px">
+                </button>
+            </div>
         </aside>
 
         <div class="right-side">
             
-            <header class="app-header">
+            <header class="app-header"></header>
                 
             </header>
             <section class="main-chat">
                 
             </section>
+            
         </div>
         
+        
     </main>
+        <script>
+            document.getElementsByClassName("navigation")[0].style.width = "250px"
+
+            window.onload = function() {
+                var nav = document.getElementsByClassName("navigation");
+                var right_sd = document.getElementsByClassName("right-side");
+                var but = document.getElementById("menu-btn");
+                
+
+                let event = but.addEventListener("click", () => {
+                    let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+                    let nav_width = nav[0].style.width
+                    if(width > 960) {
+                        if(nav_width === "250px") {
+                            nav[0].style.width = "80px";
+                            console.log("Set to 80px")
+                        } else {
+                            nav[0].style.width = "250px";
+                            console.log("Set to 250px")
+                        }
+                    } else {
+                        if(nav_width === "0px") {
+                            // nav[0].style.zIndex = 2;
+                            nav[0].style.width = "600px";
+                            // nav[0].style.position = "relative";
+                            // nav[0].style.left = "200px";
+                            
+                            console.log("Set to 400px")
+                        }
+                        else {
+                            // console.log(nav_width)
+                            // nav[0].style.zIndex = 2;
+                            nav[0].style.width = "0px";
+                            console.log("Set to 0px")
+                        }
+                    }
+                });
+
+                let window_size = window.addEventListener("resize", function() {
+                    let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+                    if (width > 960) {
+                        nav[0].style.width = "250px";
+                        nav[0].style.backgroundColor = "red";
+                        nav[0].style.position = "static;"
+                    } else {
+                        nav[0].style.width = "0px";
+                        // nav[0].style.position = "fixed";
+                        nav[0].style.backgroundColor = "yellow";
+                    }
+                    });
+
+                }
+        </script>
 </body>
 </html>

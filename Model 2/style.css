@@ -1,64 +1,106 @@
 @import url("resetCSS.css");
 
-@media (max-width: 960px) {
 
-    main {
-        display: flex;
-        flex-direction: row;
-    }
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 960px) {
     
     .navigation {
-        background-color: yellowgreen;
+        background-color: #37393b;
         height: 100vh;
-        width: 250px;
+        
+        /* justify-self: flex-end; */
+    }
+
+    #menu-btn {
+        background-color: #37393b;
+        border: none;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
     }
     
+    .header-height {
+        background-color: #2a2a2a;
+        height: 80px;
+    }
+
     .right-side {
         background-color: antiquewhite;
         flex-grow: 1;
     }
     
     .app-header {
-        background-color: cornflowerblue;
+        background-color: #2a2a2a;
         height: 80px;
     }
     
     .main-chat {
-        background-color: rgb(211, 117, 3);
+        background-color: rgb(179, 64, 2);
         height: 100vh;
         width: 700px;
         margin: 0 auto;
     }
+
+    
     
 }
 
 @media (min-width: 960px) {
     
-    main {
-        display: flex;
-        flex-direction: row;
-    }
+
     
     .navigation {
-        background-color: yellowgreen;
+        background-color: #37393b;
         height: 100vh;
-        width: 250px;
+
+        /* width: 250px; */
+        /* flex: 1 0 250px; */
     }
-    
+
+    #menu-btn {
+        background-color: #37393b;
+        border: none;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    #menu-btn:hover {
+        background-color: #2a2a2a;
+        border-radius: 50%;
+        transition: background-color 0.5s ease;
+    }
+
+
+
     .right-side {
         background-color: antiquewhite;
         flex-grow: 1;
     }
     
     .app-header {
-        background-color: cornflowerblue;
+        background-color: #2a2a2a;
         height: 80px;
     }
     
     .main-chat {
-        background-color: rgb(211, 117, 3);
-        height: 100vh;
+        background-color: rgb(179, 100, 4);
+        height: calc(100vh - 80px);
         width: 700px;
+        /* flex: 1 0 700px; */
         margin: 0 auto;
     }
 }
