@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile View - Taurus</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <main class=".mallanna-regular">
         <aside class="navigation">
             <div class="header-height">
                 <button>
                     <img id="menu-btn" src="menu-icon.svg" alt="button menu icon" width="40px">
                 </button>
+                <h6 id="product-name">Taurus</h6>
             </div>
         </aside>
 
@@ -32,7 +33,7 @@
             let nav = document.getElementsByClassName('navigation')
             let btn = document.getElementById("menu-btn")
             nav[0].classList.add('invisible')
-            
+
             console.log(nav[0].classList.contains('visible'))
             console.log(nav[0].classList)
 
