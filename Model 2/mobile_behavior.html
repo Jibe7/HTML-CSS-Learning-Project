@@ -13,7 +13,7 @@
                 <button>
                     <img id="menu-btn" src="menu-icon.svg" alt="button menu icon" width="40px">
                 </button>
-                <h6 id="product-name">Taurus</h6>
+                <h6 id="product-name" class="product-title inplace">Taurus</h6>
             </div>
         </aside>
 
@@ -64,19 +64,23 @@
     <script>
         window.onload = function() {
             let nav = document.getElementsByClassName('navigation')
+            let prod = document.getElementsByClassName("product-title")
             let btn = document.getElementById("menu-btn")
             nav[0].classList.add('invisible')
-
-            console.log(nav[0].classList.contains('visible'))
-            console.log(nav[0].classList)
-
+            prod[0].classList.add('inplace')
+            
             let btnEvent = btn.addEventListener('click', () => {
                 if (nav[0].classList.contains("visible")) {
                     nav[0].classList.add('invisible')
+                    prod[0].classList.add('inplace')
+                    prod[0].classList.remove('shifting')
                     nav[0].classList.remove('visible')
-                    btn.style.visibility =  'visible';
+                    // btn.style.visibility =  'visible';
                 } else {
                     nav[0].classList.add('visible')
+                    prod[0].classList.add('shifting')
+                    prod[0].classList.remove('inplace')
+                    // title[0].classList.add('shifting')
                     nav[0].classList.remove('invisible')
                 }
             })
