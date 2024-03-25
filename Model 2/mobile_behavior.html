@@ -19,22 +19,42 @@
 
         <div class="right-side">
             
-            <header class="app-header"></header>
-                
-            </header>
+            <div class="app-header"></header>
+                <img id="user" src="no-profile-img.svg" alt="user-profile" width="300px">
+            </div>
             <section class="main-chat">
                 <div class="text-zone">
                     <ul class="chat-zone">
                         <li>
-                            <img src="" alt="" width="30px" height="30px">
-                            <p class="text-zone">
+                            <img src="no-profile-img.svg" alt="" width="30px" height="30px" class="profile-picture">
+                            <p class="chat-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam quae iste voluptate? Accusantium, necessitatibus in qui inventore, consequatur modi fugiat a dicta assumenda et dolorum fugit. Rem officia laudantium ipsa tempora delectus cumque, quod, ullam aperiam enim assumenda ipsam perferendis! Nostrum neque animi dicta veritatis amet sint molestias nihil.
                             </p>
                         </li>
+                        <li>
+                            <img src="no-profile-img.svg" alt="" width="30px" height="30px" class="profile-picture">
+                            <p class="chat-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam quae iste voluptate? Accusantium, necessitatibus in qui inventore, consequatur modi fugiat a dicta assumenda et dolorum fugit. Rem officia laudantium ipsa tempora delectus cumque, quod, ullam aperiam enim assumenda ipsam perferendis! Nostrum neque animi dicta veritatis amet sint molestias nihil.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="no-profile-img.svg" alt="" width="30px" height="30px" class="profile-picture">
+                            <p class="chat-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam quae iste voluptate? Accusantium, necessitatibus in qui inventore, consequatur modi fugiat a dicta assumenda et dolorum fugit. Rem officia laudantium ipsa tempora delectus cumque, quod, ullam aperiam enim assumenda ipsam perferendis! Nostrum neque animi dicta veritatis amet sint molestias nihil.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="no-profile-img.svg" alt="" width="30px" height="30px" class="profile-picture">
+                            <p class="chat-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam quae iste voluptate? Accusantium, necessitatibus in qui inventore, consequatur modi fugiat a dicta assumenda et dolorum fugit. Rem officia laudantium ipsa tempora delectus cumque, quod, ullam aperiam enim assumenda ipsam perferendis! Nostrum neque animi dicta veritatis amet sint molestias nihil.
+                            </p>
+                        </li>
+                        
+                        
                     </ul>
                 </div>
                 <div class="input-zone">
-                    <input type="text" name="" id="">
+                    <textarea id="input-text-field" name="chatTextZone" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
                     <input type="button" value="&rarr;">
                 </div>
             </section>
@@ -52,12 +72,12 @@
 
             let btnEvent = btn.addEventListener('click', () => {
                 if (nav[0].classList.contains("visible")) {
-                    nav[0].classList.remove('visible')
                     nav[0].classList.add('invisible')
+                    nav[0].classList.remove('visible')
                     btn.style.visibility =  'visible';
                 } else {
-                    nav[0].classList.remove('invisible')
                     nav[0].classList.add('visible')
+                    nav[0].classList.remove('invisible')
                 }
             })
 
