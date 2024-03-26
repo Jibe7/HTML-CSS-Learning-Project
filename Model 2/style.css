@@ -83,8 +83,107 @@ main {
     background-color: chocolate;
     height: 100%;
     overflow: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
+.new-chat {
+    width: 240px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.new-chat-p {
+    background-color: red;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    width: 160px;
+    height: 50px;
+}
+
+.newchat-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(plus-sign.svg);
+    background-size: cover;
+}
+
+
+
+.help-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(help-logo.svg);
+    background-size: cover;
+}
+.activity-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(clock-activity.svg);
+    background-size: cover;
+}
+.settings-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(settings-logo.svg);
+    background-size: cover;
+}
+
+.recent-chats {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    list-style: none;
+    background-color: antiquewhite;
+    overflow: auto;
+    max-height: 220px;
+}
+.recent-chats > li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.recent-chats > li > img {
+    margin: 5px;
+}
+
+.chat-title  {
+    background-color: red;
+    display: block;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recent-chat-tab-title {
+    position: relative;
+    left: -10px;
+    margin-top: 30px;
+    width: 150px;
+}
 
 /* --------------- Chat Part ----------- */
 .right-side {
