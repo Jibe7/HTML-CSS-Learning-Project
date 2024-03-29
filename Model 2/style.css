@@ -26,10 +26,13 @@ main {
     background-color: #37393b;
     border: none;
     position: fixed;
+    cursor: pointer;
     top: 20px;
     left: 20px;
-    cursor: pointer;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(menu-icon.svg);
 }
 
 #product-name {
@@ -50,6 +53,8 @@ main {
 
     
 .navigation {
+    /* display: flex; */
+    /* justify-content: flex-start; */
     background-color: #37393b;
     height: 100vh;
     position: fixed;
@@ -57,24 +62,167 @@ main {
     left: 0;
 }
 
+.header-height {
+    height: 80px;
+}
+
 .visible {
     max-width: 260px;
     width: 260px;
-    /* width: 22vw; */
 }
 
 .invisible {
-    /* max-width: 260px; */
     width: 80px;
+    /* width: 260px; */
 }
 
 #menu-btn:hover {
     background-color: #2a2a2a;
     transition: background-color 0.5s ease;
 }
+
+.nav-content {
+    /* background-color: chocolate; */
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.end-btn {
+    display: flex;
+    flex-flow: column nowrap;
+    /* margin: 10px; */
+    margin-bottom: 100px;
+    /* background-color: yellow; */
+    position: sticky;
+    z-index: 2;
+    height: fit-content;
+    overflow: visible;
+}
+
+.new-chat, .end-btn > div {
+    width: 240px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.new-chat-p {
+    /* background-color: rgb(255, 51, 0); */
+    display: block;
+    text-align: left;
+    margin: 10px;
+    width: 160px;
+    /* height: 50px; */
+}
+
+.newchat-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(plus-sign.svg);
+    background-size: cover;
+}
+
+div.help , div.activity, div.param {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.help-p, .activity-p, .param-p {
+    margin: 10px;
+}
+
+.help-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(help-logo.svg);
+    background-size: cover;
+}
+.activity-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(clock-activity.svg);
+    background-size: cover;
+}
+.settings-btn {
+    background-color: #37393b;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(settings-logo.svg);
+    background-size: cover;
+}
+
+h3.recent-chat-tab-title {
+    margin-left: 20px;
+    position: relative;
+    left: 3px;
+    /* background-color: aqua; */
+}
+
+.recent-chats {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0 0 20px;
+    list-style: none;
+    /* background-color: rgb(255, 255, 255); */
+    overflow: auto;
+    height: 220px; 
+    width: 80%;
+}
+.recent-chats > li {
+    display: inline-flex;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.recent-chats > li > img {
+    margin: 5px;
+}
+
+.chat-title  {
+    /* background-color: red; */
+    display: block;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recent-chat-tab-title {
+    position: relative;
+    left: -10px;
+    margin-top: 30px;
+    width: 150px;
+}
+
 /* --------------- Chat Part ----------- */
 .right-side {
-    background-color: antiquewhite;
+    background-color: #2a2a2a;
     flex-grow: 1;
 }
 
@@ -111,6 +259,7 @@ main {
     margin: 0 20px;
     list-style-type: none;
     overflow: auto;
+    color: white;
 }
 
 .profile-picture {
@@ -119,7 +268,7 @@ main {
 }
 
 .text-zone {
-    background-color: aqua;
+    /* background-color: aqua; */
     overflow: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -133,7 +282,7 @@ main {
 }
 
 #input-text-field {
-    background-color: #797a7c;
+    background-color: #424447;
     color: black;
     border: none;
     border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
@@ -149,18 +298,15 @@ main {
     overflow-y: scroll;
 }
 
-.menu-btn {
-    margin: 0 20px 0 0px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+
+
+input[type ="button"] {
     background-color: #37393b;
-    background-image: url(menu-icon.svg);
-    background-size: cover;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
-
-
 
 .menu-btn:hover {
     cursor: pointer;
@@ -171,28 +317,46 @@ main {
     background-color: #0a0a0a;
 }
 
-textarea::-webkit-scrollbar-track {
-    /* Target WebKit browsers first, then Mozilla based browsers (like Firefox) and finally standard compliant browsers (like recent versions of IE/Edge)*/
-    background: red;
-    border-radius: 20px;
+.nav-anim {
+    transition: opacity 5s ease, display 5s ease;
+}
+
+.nav-invisible {
+    opacity: 0;
+    display: none;
+}
+
+*::-webkit-scrollbar {
+    background-color: #222222; /* Adjust color as needed */
+    width: 15px;
+  }
+  
+  *::-moz-scrollbar {
+    background-color: #222222; /* Adjust color as needed */
+  }
+  
+  *::-scrollbar {
+    background-color: #222222; /* Adjust color as needed */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #37393b; /* Adjust color as needed */
+    border-radius: 70px;
+    /* background-clip: content-box; */
+  }
+  
+  *::-moz-scrollbar-thumb {
+    background-color: #37393b; /* Adjust color as needed */
+  }
+  
+  *::-scrollbar-thumb {
+    background-color: #37393b; /* Adjust color as needed */
   }
 
-textarea::-webkit-scrollbar-thumb {
-    /* Target WebKit browsers first, then Mozilla based browsers (like Firefox) and finally standard compliant browsers (like recent versions of IE/Edge)*/
-    background-color: red;
-    color: yellow;
-  }
-
-  textarea::-webkit-scrollbar-button, textarea::-moz-scrollbar-button, textarea::-scrollbar-button {
-    /* Target WebKit browsers first, then Mozilla based browsers (like Firefox) and finally standard compliant browsers (like recent versions of IE/Edge)*/
-    background-color: red;
-    color: red;
-  }
- 
 @media (min-width: 960px) {
 
     .main-chat {
-        background-color: rgb(179, 100, 4);
+        background-color: #2a2a2a;
         height: calc(100vh - 80px);
         width: 700px;
         margin: 0 auto;
@@ -202,12 +366,13 @@ textarea::-webkit-scrollbar-thumb {
         left: 280px;
     }
 
+
 }
 
 @media (max-width: 960px) {
 
     .main-chat {
-        background-color: rgb(162, 179, 4);
+        /* background-color: rgb(162, 179, 4); */
         height: calc(100vh - 80px);
         width: 95vw;
         margin: 0 auto;
