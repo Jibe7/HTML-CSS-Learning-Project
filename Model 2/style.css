@@ -32,7 +32,7 @@ main {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-image: url(menu-icon.svg);
+    background-image: url(img/menu-icon.svg);
 }
 
 #product-name {
@@ -130,7 +130,7 @@ main {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-image: url(plus-sign.svg);
+    background-image: url(img/plus-sign.svg);
     background-size: cover;
 }
 
@@ -151,7 +151,7 @@ div.help , div.activity, div.param {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-image: url(help-logo.svg);
+    background-image: url(img/help-logo.svg);
     background-size: cover;
 }
 .activity-btn {
@@ -161,7 +161,7 @@ div.help , div.activity, div.param {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-image: url(clock-activity.svg);
+    background-image: url(img/clock-activity.svg);
     background-size: cover;
 }
 .settings-btn {
@@ -171,7 +171,7 @@ div.help , div.activity, div.param {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-image: url(settings-logo.svg);
+    background-image: url(img/settings-logo.svg);
     background-size: cover;
 }
 
