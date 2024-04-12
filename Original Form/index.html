@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article class="landing-page">
+            <section class="decoration">
+                <h1 class="app-name">Web Chat App</h1>
+            </section>
+            
+            <section class="log-form">
+                <form action="/login" method="post">
+                    <fieldset>
+                        <legend>Login and Register Form</legend>
+                        <label for="usrnm">Username <span aria-label="required">*</span></label>
+                        <input type="text" name="username" id="usrnm" required>
+                        <label for="pswrd">Password <span aria-label="required">*</span></label>
+                        <input type="password" name="password" id="pswrd" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Login or Register Button</legend>
+                        <label for="lgn"></label>
+                        <button id="lgn">Login</button>
+                        <label for="lgn"></label>
+                        <button id="reg">Register</button>
+                    </fieldset>
+                </form>
+                <script>
+                    let lgnButton = document.getElementById("lgn");
+                    let regButton = document.getElementById("reg");
+                    const preventDef = () => {
+                        // alert("Submitted !");
+                        event.preventDefault();
+                        usernameText = document.getElementById("usrnm");
+                        let reg = /^\s*$/;
+                        reg.test(usernameText.value) ? console.log("Empty !") : console.log(usernameText.value)
+                    }
+                    // lgnButton.addEventListener("click", preventDef)
+                    regButton.addEventListener("click", preventDef)
+                    </script>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
