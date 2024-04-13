@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 5px;
+
+}
+
+
+body {
+    
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    background-color: aqua;
+    grid-area: nav;
+}
+
+aside {
+    background-color: aquamarine;
+    grid-area: aside;
+}
+
+main {
+    background-color: cadetblue;
+    grid-area: main;
+}
+
+main + article {
+    background-color: chartreuse;
+    grid-area: article1;
+}
+
+article:nth-of-type(2) {
+    background-color: blueviolet;
+    grid-area: article2;
+}
+
+article:last-of-type {
+    background-color: yellow;
+    grid-area: article3;
+}
+
+footer {
+    background-color: yellowgreen;
+    grid-area: footer;
+}
+
+@media screen and (min-width: 930px) {
+
+body {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "nav nav nav nav"
+    "aside main main main"
+    "aside article1 article2 article3"
+    "aside footer footer footer";
+    }
+
+}
+
+
+@media screen and (max-width: 930px) {
+    
+    body {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 0.2fr 0.2fr 1.5fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "nav"
+        "aside"
+        "main"
+        "article1"
+        "article2"
+        "article3"
+        "footer";
+        }
+
+}

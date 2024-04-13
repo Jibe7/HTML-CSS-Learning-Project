@@ -8,3 +8,26 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.landing-page {
+    display: grid;
+    grid-template-columns: 65vw 35vw;
+    grid-template-rows: 100vh;
+}
+
+.decoration {
+    background-color: red;
+    opacity: 0.3;
+}
+
+.log-form {
+    background-color: green;
+    opacity: 0.3;
+}
+
+@media (min-width = 480) {
+    .log-form {
+        min-width: 480px;
+    }
+}
+

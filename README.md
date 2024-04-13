@@ -12,7 +12,7 @@ Functional requirements :
 
 Technical requirements :
 - Use grid instead of flexbox this time.
-- Responsive
+- Responsive Design
 - Using Git during the whole project, with clear commit on what I did, committing to a GitHub repository.
 
 ## Planning
