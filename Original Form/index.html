@@ -10,41 +10,48 @@
     <main>
         <article class="landing-page">
             <section class="decoration">
-                <h1 class="app-name">Web Chat App</h1>
+                <h1 class="app-name app-title">Web Chat App</h1>
             </section>
             
             <section class="log-form">
                 <form action="/login" method="post">
-                    <fieldset>
-                        <legend>Login and Register Form</legend>
-                        <label for="usrnm">Username <span aria-label="required">*</span></label>
+                    <div class="round-container">
+                        <div class="round" id="round-one"></div>
+                        <div class="round" id="round-two"></div>
+                        <div class="round" id="round-three"></div>
+                    </div>
+                    <fieldset id="lgn-reg">
+                        <legend>Login or Register Form</legend>
+                        <label for="usrnm">Username <span class="required">*</span></label>
                         <input type="text" name="username" id="usrnm" required>
-                        <label for="pswrd">Password <span aria-label="required">*</span></label>
+                        <label for="pswrd">Password <span class="required">*</span></label>
                         <input type="password" name="password" id="pswrd" required>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="frm-btn">
                         <legend>Login or Register Button</legend>
                         <label for="lgn"></label>
-                        <button id="lgn">Login</button>
-                        <label for="lgn"></label>
                         <button id="reg">Register</button>
+                        <label for="lgn"></label>
+                        <button id="lgn">Login</button>
                     </fieldset>
+                    <h1 class="app-name app-title-on-form">Web Chat App</h1>
                 </form>
-                <script>
-                    let lgnButton = document.getElementById("lgn");
-                    let regButton = document.getElementById("reg");
-                    const preventDef = () => {
-                        // alert("Submitted !");
-                        event.preventDefault();
-                        usernameText = document.getElementById("usrnm");
-                        let reg = /^\s*$/;
-                        reg.test(usernameText.value) ? console.log("Empty !") : console.log(usernameText.value)
-                    }
-                    // lgnButton.addEventListener("click", preventDef)
-                    regButton.addEventListener("click", preventDef)
-                    </script>
             </section>
         </article>
+        <script defer>
+
+            // Prevail the form to being submitted when the input is empty.
+            let lgnButton = document.getElementById("lgn");
+            let regButton = document.getElementById("reg");
+            const preventDef = () => {
+                event.preventDefault();
+                usernameText = document.getElementById("usrnm");
+                let reg = /^\s*$/;
+                reg.test(usernameText.value) ? console.log("Empty !") : console.log(usernameText.value)
+            }
+            lgnButton.addEventListener("click", preventDef)
+            regButton.addEventListener("click", preventDef)
+            </script>
     </main>
 </body>
 </html>
