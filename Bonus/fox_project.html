@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate 2024 Fullstack Web Development Bootcamp - Projet JavaScript 201
+    ">
+    <title>JavaScript Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100vh;
+            align-items: stretch;
+        }
+        
+        article {
+            flex: 4 0 500px;
+            background-color: rgb(97, 15, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            background-color: blueviolet;
+        }
+        
+        .img-visible {
+            visibility: hidden;
+        }
+
+        nav {
+            background-color: rgb(230, 138, 0);
+            flex: 1 0 300px;
+            height: 100vh;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            background-image: linear-gradient(red, yellow);
+            box-shadow: 6px 6px 15px rgb(119, 18, 0);
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        
+        <nav>
+            <h1>Choose your fox !</h1>
+            <button id="fox-butt">Fox !</button>
+        </nav>
+
+        <article class="fox-image">
+            <img id="fox-img" src="" alt="a fox image" max-width="100%" max-height="100%" class="img-visible">
+        </article>
+
+    </main>
+    
+    <script>
+        window.onload = function() {
+            const button = document.getElementById("fox-butt")
+            button.addEventListener("click", () => {
+                const myImage = document.getElementById("fox-img");
+                let foxURL = "https://randomfox.ca/floof/"
+
+                const errorHandler = () => {
+                    myImage.classList.remove("img-visible")
+                            myImage.setAttribute("src", "https://images.unsplash.com/photo-1623018035782-b269248df916?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+                            console.error("Couldn't load image.")
+                }
+
+                try {
+
+                    let response = fetch(foxURL)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data && data.image) {
+                            myImage.classList.remove("img-visible")
+                            myImage.setAttribute("src", data.image)
+                            console.log("Image Loaded Succesfuly.")
+                        } else {
+                            errorHandler()
+                            console.log("data or data.image not defined.")
+                        }
+                    })
+                    .catch(error => {
+                        errorHandler()
+                        console.log("Fetch Error.")
+                    })
+                }
+                catch(error) {
+                    errorHandler()
+                    console.error("An issue occured. Wrong url from the API may cause this issue.")
+                }
+            
+            // First try (also worked) :
+            // button.addEventListener("click", () => {
+            //     const myImage = document.getElementById("fox-img");
+            //     let nb = Math.floor(Math.random()*123)
+            //     let foxURL = "https://randomfox.ca/images/" + String(nb) + ".jpg"
+            //     myImage.classList.remove("img-visible")
+            //     console.log(foxURL)
+            //     myImage.setAttribute("src", foxURL)
+            // });
+
+
+                
+            });
+
+
+        }
+    </script>
+</body>
+</html>

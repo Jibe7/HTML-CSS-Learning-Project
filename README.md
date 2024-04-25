@@ -10,6 +10,7 @@
 Functional requirements :
 - Good looking.
 - Would be good to understand the different ways of sending form data to a backend even if it is not implemented.
+
 Technical requirements :
 - Use grid and flexbox.
 - Responsive Design.

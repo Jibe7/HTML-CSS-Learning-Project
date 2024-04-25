@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Form</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        div {
+             display: inline-block;
+             border: 5px solid red;
+             padding: 10px;
+        }
+
+        .form_cls {
+            margin: 30px;
+            padding: 30px;
+            background-color: blanchedalmond;
+            /* float: inline-start; */
+            display: flex;
+            /* justify-content: flex-end; */
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        #one, #two #three {
+            padding: 10px;
+            background-color: aqua;
+        }
+
+        input {
+            width: 20px;
+            height: 20px;
+        }
+
+        input[type="button"] {
+            padding: 20px 200px 10px 0;
+            border: none;
+            width: 120px;
+            height: 40px;
+            background-color: aquamarine;
+            /* display: flex;
+            justify-content: flex-start;
+            align-items: flex-start; */
+            text-align: center;
+        }
+
+        input[type="date"] {
+            padding: 20px;
+            height: 50px;
+            width: auto;
+            background-color: antiquewhite;
+        }
+
+        input[type="datetime"] {
+            padding: 30px;
+            width: auto;
+            height: auto;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <div>This is a div</div>
+    <div>This is a div</div>
+    <div>This is a div</div>
+    <form action="GET" class="form_cls">
+        <label for="check1">Checkbox 1</label>    
+        <input type="checkbox" name="check1" id="one">
+        <label for="check2">Checkbox 2</label>    
+        <input type="checkbox" name="check2" id="two">
+        <label for="check3">Checkbox 3</label>    
+        <input type="checkbox" name="check3" id="three">
+
+        <label for="choose_clr">Choose your favorite colour !</label>
+        <input type="color" name="choose_clr" id="colors">
+
+        <label for="btn">Are you pressing the button ?</label>
+        <input type="button" name="btn" value="I am a happy button">
+
+        <label for="date_inp">When is your birthday ?</label>
+        <input type="date" name="date_inp" id="adate">
+
+        <label for="datetim_inp">What's a datetime ?</label>
+        <input type="datetime" name="datetim_inp" id="adttime">
+
+        <label for="mail_inp">Enter your email</label>
+        <input type="email" name="mail_inp" id="amail" required placeholder="ada.lovelace@barbage.com">
+        <input type="button" value="Submit Email">
+
+        <label for=""></label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8J_793qpH9M?si=Ts-vWjM3rG9H1_mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+</body>
+</html>
