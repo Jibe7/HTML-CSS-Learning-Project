@@ -26,6 +26,8 @@ End : 20/04/2024
 
 [Model 3](https://jibe7.github.io/HTML-CSS-Learning-Project/Original%20Form/)
 
+[Bonus For Getting Data](https://jibe7.github.io/HTML-CSS-Learning-Project/Bonus/)
+
 I think this project was a success: 
 - I find it good looking enough
 - I understood how we can send data with XMLHttpRequest or using fetch
