@@ -28,6 +28,8 @@ End : 20/04/2024
 
 [Bonus For Getting Data](https://jibe7.github.io/HTML-CSS-Learning-Project/Bonus/)
 
+[A technical test I made using HTML/CSS/TS, this fit well in this HTML-CSS learning project](https://jibe7.github.io/2024-Test-Technique/)
+
 I think this project was a success: 
 - I find it good looking enough
 - I understood how we can send data with XMLHttpRequest or using fetch
