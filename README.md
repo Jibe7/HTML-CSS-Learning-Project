@@ -19,3 +19,7 @@ Technical requirements :
 Start of the projet : 11/04/2024
 
 End : 20/04/2024
+## Result
+[Model 1](./Model%201/)
+[Model 2](./Model%202/)
+[Model 3](./Original%20Form/)
