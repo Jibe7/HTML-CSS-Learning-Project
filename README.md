@@ -26,7 +26,7 @@ End : 20/04/2024
 
 [Model 3](https://jibe7.github.io/HTML-CSS-Learning-Project/Original%20Form/)
 
-[Bonus For Getting Data](https://jibe7.github.io/HTML-CSS-Learning-Project/Bonus/)
+[Bonus For Getting Data Using an API](https://jibe7.github.io/HTML-CSS-Learning-Project/Bonus/)
 
 [A technical test I made using HTML/CSS/TS, this fit well in this HTML-CSS learning project](https://jibe7.github.io/2024-Test-Technique/)
 
@@ -37,6 +37,5 @@ I think this project was a success:
 - Two of the models were responsive
 - I used Git&Github during the whole project.
 
-However I still have a lot to improve with my current HTML/CSS skill to make my pages look professionnal. 
-I may need to learn more about design, colors, UI/UX, Figma to be able to be able to design myself good looking pages but I can already improve my HTML/CSS skills without that.
-Further learning could also be to use libraries such as Bootstrap/Tailwind CSS and libraries & frameworks such as React, Vue, Angular but also staying Vanilla.
+I still have a lot to learn to improve my current HTML/CSS skills but this is already a good start.
+Further learning may include accessibility, CSS variables, animations ... or libraries & frameworks such as React, Vue, Angular, Tailwind, Bootstrap...
